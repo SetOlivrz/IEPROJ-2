@@ -40,8 +40,8 @@ public class FirePointController : MonoBehaviour
 
         UpdateLookDir();
 
-        Debug.Log("x: " + (player.position.x - mousePos.x));
-        Debug.Log("y: " + (player.position.y - mousePos.y));
+        //Debug.Log("x: " + (player.position.x - mousePos.x));
+        //Debug.Log("y: " + (player.position.y - mousePos.y));
 
 
     }
