@@ -82,7 +82,7 @@ public class PlayerPlanting : MonoBehaviour
         {
             if (!soil.GetComponent<Soil>().occupied)
             {
-                soil.GetComponent<SpriteRenderer>().color = tilled_soil_color;
+                /*soil.GetComponent<SpriteRenderer>().color = tilled_soil_color;*/
                 soil.GetComponent<Soil>().state = "Tilled";
             }
         }             
@@ -103,13 +103,13 @@ public class PlayerPlanting : MonoBehaviour
 
     void UseWateringCan()
     {
-        if (inContact)
+        /*if (inContact)
         {
             if (soil.GetComponent<Soil>().state == "Tilled")
             {
                 soil.GetComponent<SpriteRenderer>().color = watered_soil_color;
             }
-        }     
+        }*/     
     }
 
     void UseHand()
