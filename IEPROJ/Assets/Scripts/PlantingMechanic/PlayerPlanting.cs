@@ -82,7 +82,7 @@ public class PlayerPlanting : MonoBehaviour
         {
             if (!soil.GetComponent<Soil>().occupied)
             {
-                soil.GetComponent<SpriteRenderer>().color = tilled_soil_color;
+                /*soil.GetComponent<SpriteRenderer>().color = tilled_soil_color;*/
                 soil.GetComponent<Soil>().state = "Tilled";
             }
         }             
@@ -103,13 +103,13 @@ public class PlayerPlanting : MonoBehaviour
 
     void UseWateringCan()
     {
-        if (inContact)
+        /*if (inContact)
         {
             if (soil.GetComponent<Soil>().state == "Tilled")
             {
                 soil.GetComponent<SpriteRenderer>().color = watered_soil_color;
             }
-        }     
+        }*/     
     }
 
     void UseHand()
@@ -124,7 +124,7 @@ public class PlayerPlanting : MonoBehaviour
         }     
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Soil")
         {
@@ -134,7 +134,7 @@ public class PlayerPlanting : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         soil = null;
         inContact = false;

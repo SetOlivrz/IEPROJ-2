@@ -14,7 +14,7 @@ public class Soil : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       seed = Resources.Load<Sprite>("seed");
+       seed = Resources.Load<Sprite>("Rose_Seed");
     }
 
     // Update is called once per frame
