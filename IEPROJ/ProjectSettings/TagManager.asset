@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Yes
+  - Soil
+  - Enemy
   layers:
   - Default
   - TransparentFX
