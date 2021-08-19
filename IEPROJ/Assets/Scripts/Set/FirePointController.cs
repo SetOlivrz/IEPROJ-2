@@ -17,7 +17,14 @@ public class FirePointController : MonoBehaviour
     public bool lookLeft = false;
     public bool lookRight = false;
     public bool lookForward = false;
-    public bool lookBack = false; 
+    public bool lookBack = false;
+
+    Vector2 back = new Vector2(0.5f, 0.5f);
+    Vector2 front = new Vector2(0.5f, -0.5f);
+    Vector2 left = new Vector2(-0.5f, -0.3f);
+    Vector2 right = new Vector2(0.5f, -0.5f);
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -54,30 +61,37 @@ public class FirePointController : MonoBehaviour
         if (mousePos.y > player.position.y)
         {
             ResetLookDir();
+            this.rb.position += back;
             animator.SetBool("LookBack", true);
         }
         else
         {
             ResetLookDir();
+            this.rb.position += front;
             animator.SetBool("LookForward", true);
         }
-        
-        if (distance.x > 2 ) // right
+
+
+        if (distance.x > 2) // right
         {
             ResetLookDir();
+            this.rb.position += right;
             animator.SetBool("LookRight", true);
         }
         else if (distance.x < -2)
         {
             ResetLookDir();
+            this.rb.position += left;
             animator.SetBool("LookLeft", true);
         }
 
-       
+
     }
 
     public void ResetLookDir()
     {
+        this.rb.position = player.position;
+
         animator.SetBool("LookRight", false);
         animator.SetBool("LookLeft", false);
         animator.SetBool("LookBack", false);
