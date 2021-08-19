@@ -33,7 +33,6 @@ public class SwitchMode : MonoBehaviour
 
         if (isFarming == true)
         {
-            Debug.Log("farm");
             farmingMovement.enabled = true;
             fightingMovement.enabled = false;
             animator.enabled = false;
@@ -42,11 +41,8 @@ public class SwitchMode : MonoBehaviour
         }
         else 
         {
-            Debug.Log("fight");
-
             animator.enabled = true;
             shooting.enabled = true;
-
             farmingMovement.enabled = false;
             fightingMovement.enabled = true;
         }
