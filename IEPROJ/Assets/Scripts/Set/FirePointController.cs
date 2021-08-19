@@ -24,8 +24,6 @@ public class FirePointController : MonoBehaviour
     Vector2 left = new Vector2(-0.5f, -0.3f);
     Vector2 right = new Vector2(0.5f, -0.5f);
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +33,8 @@ public class FirePointController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         this.rb.position = player.position;
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 

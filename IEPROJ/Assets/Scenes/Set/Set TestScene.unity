@@ -2369,6 +2369,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179263604}
   m_CullTransparentMesh: 1
+--- !u!1 &1186859456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 540299403889402594, guid: e4b81928f9026974db177cff37305e70, type: 3}
+  m_PrefabInstance: {fileID: 540299402749715132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1186859457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186859456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29849335fcfbba442b1d19f4f30b6bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: {fileID: 21300000, guid: a1a79de47c3446843bdb1623e0c1e51f, type: 3}
+  Down: {fileID: 21300000, guid: db92112f948ed5e46b4f61d1fb193290, type: 3}
+  Right: {fileID: 21300000, guid: dbcc89df0d21dfd44a63bb50b3132850, type: 3}
+  Left: {fileID: 21300000, guid: ded1bb6f2bd9b8747b8f057d5275ebd9, type: 3}
 --- !u!1 &1206013975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,6 +4429,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 780851873}
+    - target: {fileID: 540299403080692204, guid: e4b81928f9026974db177cff37305e70, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1186859456}
     - target: {fileID: 540299403889402586, guid: e4b81928f9026974db177cff37305e70, type: 3}
       propertyPath: slider
       value: 
