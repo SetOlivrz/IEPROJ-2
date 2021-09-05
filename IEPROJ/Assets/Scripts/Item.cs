@@ -20,7 +20,6 @@ public class Item : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            Debug.Log("Gun");
             this.transform.GetComponent<Image>().sprite = gun;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha6))
