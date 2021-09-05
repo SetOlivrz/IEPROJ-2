@@ -21,11 +21,11 @@ public class Item : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             Debug.Log("Gun");
-            this.GetComponent<Image>().sprite = gun;
+            this.transform.GetComponent<Image>().sprite = gun;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            this.GetComponent<Image>().sprite = knife;
+            this.transform.GetComponent<Image>().sprite = knife;
         }
     }
 }
