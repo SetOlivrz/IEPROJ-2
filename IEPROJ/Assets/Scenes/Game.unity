@@ -5604,7 +5604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4416309598103912491, guid: 4c1f7d0b0384f014e8fdf71061fda8ed, type: 3}
-  spawnRate: 2
+  spawnRate: 1
   totalSpawn: 4
 --- !u!4 &1416320512
 Transform:
