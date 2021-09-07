@@ -25,6 +25,6 @@ public class SceneHandler : MonoBehaviour
 
     public void onStart()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Tutorial Scene");
     }
 }

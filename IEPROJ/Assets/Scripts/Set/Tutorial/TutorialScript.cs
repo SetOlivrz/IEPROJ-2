@@ -23,7 +23,7 @@ public class TutorialScript : MonoBehaviour
     [SerializeField] GameObject Spawner;
 
 
-    private int InstructionNum = 6;
+    private int InstructionNum = 1;
 
     bool Hoe = false;
     bool Seed = false;
