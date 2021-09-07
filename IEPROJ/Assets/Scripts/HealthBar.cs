@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -26,7 +27,12 @@ public class HealthBar : MonoBehaviour
         isInv = true;
         slider.value--;
 
+        if(slider.value == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         StartCoroutine("Invincible");
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
