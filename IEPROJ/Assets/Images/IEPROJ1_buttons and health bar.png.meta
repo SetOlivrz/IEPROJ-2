@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 08525d2815a272c4e9afcff5b2c57708
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6863358600203142130
+    second: IEPROJ1_buttons and health bar_0
+  - first:
+      213: -4699732452259797800
+    second: IEPROJ1_buttons and health bar_1
+  - first:
+      213: 8819264634606241087
+    second: IEPROJ1_buttons and health bar_2
+  - first:
+      213: -5021335293784772296
+    second: IEPROJ1_buttons and health bar_3
+  - first:
+      213: 6269059770016318878
+    second: IEPROJ1_buttons and health bar_4
+  - first:
+      213: -4534047972439069928
+    second: IEPROJ1_buttons and health bar_5
+  - first:
+      213: -3286838792901972263
+    second: IEPROJ1_buttons and health bar_6
+  - first:
+      213: 7167749045652711624
+    second: IEPROJ1_buttons and health bar_7
+  - first:
+      213: 1268271546479327390
+    second: IEPROJ1_buttons and health bar_8
+  - first:
+      213: -7273339637335353805
+    second: IEPROJ1_buttons and health bar_9
+  - first:
+      213: -2214720945634608472
+    second: IEPROJ1_buttons and health bar_10
+  - first:
+      213: 7930242745936412328
+    second: IEPROJ1_buttons and health bar_11
+  - first:
+      213: 5364981665633424806
+    second: IEPROJ1_buttons and health bar_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_0
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 930
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cf4cc77b370c0a0800000000000000
+      internalID: -6863358600203142130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 750
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4eda32c3237ceb0800000000000000
+      internalID: -4699732452259797800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 687
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35cedd6572546a70800000000000000
+      internalID: 8819264634606241087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_3
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 803
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831b3db8722a05ab0800000000000000
+      internalID: -5021335293784772296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 541
+        width: 495
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95c38b55ac200750800000000000000
+      internalID: 6269059770016318878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_5
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 582
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b60383463d311c0800000000000000
+      internalID: -4534047972439069928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 386
+        width: 495
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deaa13488dc262d0800000000000000
+      internalID: -3286838792901972263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_7
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 455
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c86649d7c5f87360800000000000000
+      internalID: 7167749045652711624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_8
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 227
+        width: 495
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98b2ae704ec99110800000000000000
+      internalID: 1268271546479327390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_9
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 333
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3369bd9b228ef0b90800000000000000
+      internalID: -7273339637335353805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_10
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 197
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aaf4d6b80bb341e0800000000000000
+      internalID: -2214720945634608472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 73
+        width: 495
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae782ed2c1ed0e60800000000000000
+      internalID: 7930242745936412328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IEPROJ1_buttons and health bar_12
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 73
+        width: 423
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a55096666e347a40800000000000000
+      internalID: 5364981665633424806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
