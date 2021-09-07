@@ -9,6 +9,9 @@ public class Item : MonoBehaviour
     Sprite can;
     Sprite hoe;
 
+    public bool usingGun = false;
+    public bool usingMachete = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,21 +25,29 @@ public class Item : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             this.transform.GetComponent<Image>().sprite = hoe;
+            usingGun = false;
+            usingMachete = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             this.transform.GetComponent<Image>().sprite = can;
+            usingGun = false;
+            usingMachete = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             this.transform.GetComponent<Image>().sprite = gun;
+            usingGun = true;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             this.transform.GetComponent<Image>().sprite = knife;
+            usingMachete = true;
+
         }
     }
 }
