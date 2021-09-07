@@ -6,6 +6,8 @@ public class SwitchMode : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] GameObject weapon;
+    [SerializeField] GameObject equipedItem;
+
 
 
     private PlayerSprite farmingMovement;
@@ -50,11 +52,11 @@ public class SwitchMode : MonoBehaviour
 
     public void checkMode()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (equipedItem.GetComponent<Item>().usingGun || equipedItem.GetComponent<Item>().usingMachete)
         {
             isFarming = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Q))
+        else
         {
             isFarming = true;
         }
