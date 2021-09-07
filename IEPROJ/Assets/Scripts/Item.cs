@@ -8,6 +8,7 @@ public class Item : MonoBehaviour
     Sprite knife;
     Sprite can;
     Sprite hoe;
+    Sprite seed;
 
     public bool usingGun = false;
     public bool usingMachete = false;
@@ -18,6 +19,7 @@ public class Item : MonoBehaviour
         gun = Resources.Load<Sprite>("Pistol");
         knife = Resources.Load<Sprite>("Machete");
         can = Resources.Load<Sprite>("Watering Can");
+        seed = Resources.Load<Sprite>("Rose_Seed");
         hoe = Resources.Load<Sprite>("Hoe");
         this.GetComponent<Image>().sprite = gun;
     }
@@ -33,6 +35,12 @@ public class Item : MonoBehaviour
             usingMachete = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            this.transform.GetComponent<Image>().sprite = seed;
+            usingGun = false;
+            usingMachete = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             this.transform.GetComponent<Image>().sprite = can;
             usingGun = false;

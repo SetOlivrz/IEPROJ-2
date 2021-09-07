@@ -42,7 +42,7 @@ public class EnemySpawner : MonoBehaviour
     }
     IEnumerator Spawner()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         spawnCount = 0;
     }
 }
