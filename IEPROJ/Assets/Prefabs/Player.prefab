@@ -311,4 +311,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 540299403889402594}
   weapon: {fileID: 540299403080692209}
+  equipedItem: {fileID: 0}
   isFarming: 1
