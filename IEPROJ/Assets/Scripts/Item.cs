@@ -21,7 +21,7 @@ public class Item : MonoBehaviour
         can = Resources.Load<Sprite>("Watering Can");
         seed = Resources.Load<Sprite>("Rose_Seed");
         hoe = Resources.Load<Sprite>("Hoe");
-        this.GetComponent<Image>().sprite = gun;
+        this.GetComponent<Image>().sprite = hoe;
     }
 
     // Update is called once per frame
