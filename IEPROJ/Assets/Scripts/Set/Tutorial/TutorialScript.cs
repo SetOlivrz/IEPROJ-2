@@ -226,13 +226,13 @@ public class TutorialScript : MonoBehaviour
             {
                 timer += Time.deltaTime;
             }
+
             if (timer >= 2)
             {
                 InstructionNum++;
                 Time.timeScale = 0;
                 timer = 0;
                 UpdateSteps();
-
             }
         }
         else if (InstructionNum == 7)
