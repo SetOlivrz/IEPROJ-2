@@ -19,6 +19,7 @@ public class TutorialScript : MonoBehaviour
     [SerializeField] GameObject CheckPoints;
 
     [SerializeField] GameObject soil;
+    [SerializeField] GameObject box;
 
     [SerializeField] GameObject Spawner;
 
@@ -63,7 +64,7 @@ public class TutorialScript : MonoBehaviour
         switch(InstructionNum)
         {
             case 1: Title.text = "TUTORIAL 1: PLAYER MOVEMENT";
-                    Description.text = " You can move your player by pressing W, A, S, D and left button click to use tools and weapon.  Now try moving towards all checkpoints";
+                    Description.text = " You can move your player by pressing W, A, S, D and left button click to use tools and weapon.  Now try moving around by collecting the scattered red seeds";
                     break;
 
             case 2: Title.text = "TUTORIAL 2: SWITCHING EQUIPMENT";
@@ -84,12 +85,12 @@ public class TutorialScript : MonoBehaviour
                     break;
 
             case 6:
-                    Title.text = "TUTORIAL 5: HARVESTING";
+                    Title.text = "TUTORIAL 6: HARVESTING";
                     Description.text = "Great! You can now harvest your plant. Press [KEY NUM 4] to use your hands to harvest \n ";
                     break;
 
             case 7:
-                Title.text = "TUTORIAL 5: DEFENDING FROM ENEMIES";
+                Title.text = "TUTORIAL 7: DEFENDING FROM ENEMIES";
                 Description.text = "Every night, various monsters are known to invade farms. In any case that this happens, be ready to defend yourself by equiping weapons such as guns [KEY NUM 5] and machete [KEY NUM 6] \n ";
                 break;
 
@@ -119,9 +120,16 @@ public class TutorialScript : MonoBehaviour
 
             if (CheckpointList.Count == 0)
             {
-                InstructionNum++;
-                Time.timeScale = 0;
-                UpdateSteps();
+                timer += Time.deltaTime;
+
+                if (timer >= 2)
+                {
+                    InstructionNum++;
+                    Time.timeScale = 0;
+                    timer = 0;
+                    UpdateSteps();
+
+                }
             }
         }
         else if (InstructionNum == 2)
@@ -162,18 +170,33 @@ public class TutorialScript : MonoBehaviour
         {
             if (soil.GetComponent<Soil>().state == "Tilled")
             {
-                InstructionNum++;
-                Time.timeScale = 0;
-                UpdateSteps();
+                timer += Time.deltaTime;
+                box.SetActive(false);
+
+                if (timer >= 2)
+                {
+                    InstructionNum++;
+                    Time.timeScale = 0;
+                    timer = 0;
+                    UpdateSteps();
+
+                }
             }
         }
         else if (InstructionNum == 4)
         {
             if (soil.GetComponent<Soil>().occupied)
             {
-                InstructionNum++;
-                Time.timeScale = 0;
-                UpdateSteps();
+                timer += Time.deltaTime;
+
+                if (timer >= 2)
+                {
+                    InstructionNum++;
+                    Time.timeScale = 0;
+                    timer = 0;
+                    UpdateSteps();
+
+                }
             }
         }
 
@@ -198,17 +221,18 @@ public class TutorialScript : MonoBehaviour
         }
         else if (InstructionNum == 6)
         {
+
             if (soil.GetComponent<Soil>().occupied == false)
             {
                 timer += Time.deltaTime;
             }
+
             if (timer >= 2)
             {
                 InstructionNum++;
                 Time.timeScale = 0;
                 timer = 0;
                 UpdateSteps();
-
             }
         }
         else if (InstructionNum == 7)
@@ -245,6 +269,7 @@ public class TutorialScript : MonoBehaviour
         if (InstructionNum ==3)
         {
             soil.SetActive(true);
+            box.SetActive(true);
         }
 
         if (InstructionNum == 8)
