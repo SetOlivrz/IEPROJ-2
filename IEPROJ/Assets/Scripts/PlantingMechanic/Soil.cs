@@ -22,7 +22,7 @@ public class Soil : MonoBehaviour
     {
         if (occupied)
         {
-            if(planted_crop.state != "Third")
+            if(planted_crop.state != "Third" && this.state == "Watered")
             {
                 ticks += Time.deltaTime;
             }

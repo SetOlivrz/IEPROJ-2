@@ -7,11 +7,11 @@ public class PlayerPlanting : MonoBehaviour
     /*[SerializeField] */private GameObject soil;
     [SerializeField] private string equipped_tool;
     bool inContact = false;
-
-    Color tilled_soil_color = new Color((float)159 / 255, (float)128 / 255, (float)100 / 255);
-    Color planted_soil_color = new Color((float)155 / 255, (float)217 / 255, (float)177 / 255);
-    Color watered_soil_color = new Color((float)111 / 255, (float)88 / 255, (float)67 / 255);
-    Color empty_soil_color = new Color((float)231 / 255, (float)191 / 255, (float)154 / 255);
+    // r g b a
+    Color tilled_soil_color = new Color((float)160 / 255, (float)132 / 255, (float)107 / 255, (float)110 / 255);
+    Color planted_soil_color = new Color((float)155 / 255, (float)132 / 255, (float)107 / 255, (float)55 / 255);
+    Color watered_soil_color = new Color((float)155 / 255, (float)132 / 255, (float)107 / 255, (float)0 / 255);
+    Color empty_soil_color = new Color((float)231 / 255, (float)191 / 255, (float)154 / 255, (float)112 / 255);
 
     // Start is called before the first frame update
     void Start()
@@ -82,7 +82,7 @@ public class PlayerPlanting : MonoBehaviour
         {
             if (!soil.GetComponent<Soil>().occupied)
             {
-                /*soil.GetComponent<SpriteRenderer>().color = tilled_soil_color;*/
+                soil.GetComponent<SpriteRenderer>().color = tilled_soil_color;
                 soil.GetComponent<Soil>().state = "Tilled";
             }
         }             
@@ -96,6 +96,7 @@ public class PlayerPlanting : MonoBehaviour
             {
                 soil.GetComponent<Soil>().occupied = true;
                 soil.GetComponent<Soil>().planted_crop = PlantTypes.Rose();
+                soil.GetComponent<SpriteRenderer>().color = planted_soil_color;
                 Debug.Log(soil.GetComponent<Soil>().planted_crop.name);
             }
         }       
@@ -103,13 +104,15 @@ public class PlayerPlanting : MonoBehaviour
 
     void UseWateringCan()
     {
-        /*if (inContact)
+        if (inContact)
         {
             if (soil.GetComponent<Soil>().state == "Tilled")
             {
                 soil.GetComponent<SpriteRenderer>().color = watered_soil_color;
+                soil.GetComponent<Soil>().state = "Watered";
+
             }
-        }*/     
+        }     
     }
 
     void UseHand()
@@ -119,7 +122,9 @@ public class PlayerPlanting : MonoBehaviour
             if (soil.GetComponent<Soil>().planted_crop.state == "Third")
             {
                 soil.transform.GetChild(0).gameObject.SetActive(false);
+                soil.GetComponent<SpriteRenderer>().color = empty_soil_color;
                 soil.GetComponent<Soil>().occupied = false;
+
             }
         }     
     }
