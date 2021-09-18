@@ -120,9 +120,16 @@ public class TutorialScript : MonoBehaviour
 
             if (CheckpointList.Count == 0)
             {
-                InstructionNum++;
-                Time.timeScale = 0;
-                UpdateSteps();
+                timer += Time.deltaTime;
+
+                if (timer >= 2)
+                {
+                    InstructionNum++;
+                    Time.timeScale = 0;
+                    timer = 0;
+                    UpdateSteps();
+
+                }
             }
         }
         else if (InstructionNum == 2)
@@ -180,9 +187,16 @@ public class TutorialScript : MonoBehaviour
         {
             if (soil.GetComponent<Soil>().occupied)
             {
-                InstructionNum++;
-                Time.timeScale = 0;
-                UpdateSteps();
+                timer += Time.deltaTime;
+
+                if (timer >= 2)
+                {
+                    InstructionNum++;
+                    Time.timeScale = 0;
+                    timer = 0;
+                    UpdateSteps();
+
+                }
             }
         }
 
